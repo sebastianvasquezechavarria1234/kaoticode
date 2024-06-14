@@ -1,0 +1,44 @@
+---
+import FlexCard from "./FlexCard.astro"
+---
+
+<!-- FLEXBOX AGENCIA -->
+<section class="mt-[120px] px-[40px] max-lg:px-[20px]">
+    <!-- TITLE -->
+     <h3 class="mb-[30px] italic">Nosotros</h3>
+
+    <!-- FLEX -->
+    <div class="flex flex-wrap gap-[20px]">
+        <FlexCard
+            style="bg-[url(/agencia__bg--1.avif)]"
+            icon1="/agencia__1.avif"
+            icon2="/agencia__2.avif"
+            title="Nuestra"
+            titleSpan1="agencia de marketing"
+            title2="online, ofrecemos"
+            titleSpan2="un servicio integral diseñado para impulsar el éxito"
+            description1="En nuestra agencia de marketing online, ofrecemos un servicio integral diseñado para impulsar el éxito de tu empresa en el mundo digital."
+            description2="Nuestro equipo altamente capacitado te brinda asesoría experta y gestiona tus redes sociales y su contenido las 24 horas del día"
+            description3="Creemos en mantener una presencia online activa y atractiva para tu audiencia."         
+        />
+        <FlexCard
+            style="bg-[url(/agencia__bg--2.avif)]"
+            icon1="/agencia__3.avif"
+            title="Desde el "
+            titleSpan1="desarrollo"
+            title2="de estrategias "
+            titleSpan2="personalizadas"
+            description1="trabajamos incansablemente para que tu empresa alcance su máximo potencial en el mercado digital."
+            description2="Nuestros servicios abarcan desde la optimización de motores de búsqueda (SEO) hasta la creación de campañas publicitarias efectivas en redes sociales y más allá."         
+        />
+        <FlexCard
+            style="bg-[url(/agencia__bg--3.avif)]"
+            icon1="/agencia__4.avif"
+            title="Nos comprometemos"
+            titleSpan1="a comprender "
+            titleSpan2="a fondo tu negocio"
+            description1="audiencia y objetivos para crear estrategias que te lleven más lejos de lo que nunca imaginaste."
+            description2="Creemos en la transparencia, comunicación abierta y resultados medibles. Con nosotros, obtendrás un equipo dedicado y un socio comprometido con tu éxito."        
+        />
+    </div>
+</section>

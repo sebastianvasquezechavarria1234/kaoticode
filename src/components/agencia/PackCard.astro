@@ -1,0 +1,20 @@
+---
+const { style } = Astro.props;
+---
+
+<!-- PACK CARD -->
+
+<article class=`${style} p-[24px] rounded-[10px] border-[1px] border-white/30`>
+    <slot />
+</article>
+
+<style>
+    article{
+        width: calc(33% - 10px);
+    }
+    @media screen and (max-width: 900px){
+        article{
+            width: 100%;
+        }
+    }
+</style>

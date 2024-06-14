@@ -2,12 +2,31 @@
 import Layout from "../layouts/Layout.astro";
 import MaxWidth from "../layouts/MaxWidth.astro";
 import Header from "../layouts/header/Header.astro";
-import Hero from "../components/agencia/Hero.astro";
+import Title from "../components/Title.astro";
+import Pack from "../components/agencia/Pack.astro";
+import Flex from "../components/agencia/Flex.astro";
+import BtnContacto from "../components/BtnContacto.astro";
+import Faqs from "../components/home/Faqs.astro";
+import Contacto from "../components/Contacto.astro";
+import Footer from "../layouts/Footer.astro";
 ---
 
 <Layout title="Kaoticode | Agencia">
     <Header />
+
+    <Title 
+        title="agencia"
+    />
+
+    <BtnContacto />
+
+    <Pack />
+
+    <Flex />
+
     <MaxWidth>
-        <Hero />
+        <Faqs />
+        <Contacto />
+        <Footer />
     </MaxWidth>
 </Layout>

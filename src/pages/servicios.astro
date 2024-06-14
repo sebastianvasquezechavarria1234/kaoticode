@@ -4,7 +4,10 @@ import Header from "../layouts/header/Header.astro";
 import MaxWidth from "../layouts/MaxWidth.astro";
 import Grid from "../components/servicios/Grid.astro";
 import Title from "../components/Title.astro";
+import Faqs from "../components/home/Faqs.astro";
+import Contacto from "../components/Contacto.astro";
 import Footer from "../layouts/Footer.astro";
+import BtnContacto from "../components/BtnContacto.astro";
 ---
 
 <Layout title="Kaoticode | Servicios">
@@ -16,5 +19,13 @@ import Footer from "../layouts/Footer.astro";
         />
     </div>
 
+    <BtnContacto />
+
     <Grid />
+
+    <MaxWidth>
+        <Faqs />
+        <Contacto />
+        <Footer />
+    </MaxWidth>
 </Layout>

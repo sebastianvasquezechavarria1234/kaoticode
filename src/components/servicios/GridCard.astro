@@ -1,5 +1,5 @@
 ---
-const { img } = Astro.props;
+const { img, title, description } = Astro.props;
 ---
 
 
@@ -13,8 +13,8 @@ const { img } = Astro.props;
 
         <!-- TITLE -->
          <div class="relative z-30 bg-white text-black p-[20px] rounded-[20px] w-full">
-             <p class="uppercase italic">Spin app</p>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, eum fuga! Non, modi qui illum quisquam assumenda, consequatur, at facilis dolorem asperiores dolorum deserunt. Obcaecati autem placeat eveniet quasi quia!</p>
+             <p class="uppercase italic font-bold">{title}</p>
+             <p>{description}</p>
 
          </div>
 </article>

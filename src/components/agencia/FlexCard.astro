@@ -1,0 +1,74 @@
+---
+const { title, title2, titleSpan1, titleSpan2, style, icon1, icon2, description1, description2, description3 } = Astro.props;
+---
+
+<!-- CARD FLEX -->
+<article class=`${style} bg-cover bg-center p-[24px] rounded-[20px]`>
+    <div class="width flex gap-[30px]">
+        <!-- PICTURE -->
+        <img 
+            class="w-[200px]"
+            src={icon1} 
+            alt="picture">
+    
+        <!-- TITLE -->
+         <div class="title flex flex-col w-[60%]">
+            <h4 class="mb-[30px]">
+                {title} <span class="italic">{titleSpan1}</span> {title2} <span class="uppercase font__secundary">{titleSpan2}</span>
+            </h4>
+            <p class="mb-[20px] block">{description1}</p>
+            <p>{description2}</p>
+            <p>{description3}</p>
+         </div>
+
+         <!-- PICTURE -->
+        <img 
+            class="w-[200px]"
+            src={icon2} 
+            alt="picture">
+
+    </div>
+</article>
+
+<style>
+    article:nth-child(1){
+        width: 100%;
+    }
+    article:nth-child(1) .width{
+        max-width: 1500px;
+        margin: 0 auto
+    }
+    article:nth-child(2),
+    article:nth-child(3){
+        width: calc(50% - 10px);
+    }
+    article:nth-child(2) div img:nth-child(3),
+    article:nth-child(3) div img:nth-child(3){
+        display: none;
+    }
+    @media screen and (max-width: 1400px){
+        article:nth-child(2) div,
+        article:nth-child(3) div{
+            flex-direction: column;;
+        }
+    }
+    @media screen and (max-width: 1200px){
+        article:nth-child(1) div{
+            flex-direction: column;;
+        }
+        article:nth-child(1) div .title,
+        article:nth-child(2) div .title,
+        article:nth-child(3) div .title{
+            width: 100%;
+        }
+        article:nth-child(1) div img:nth-child(3){
+            display: none;
+        }
+    }
+    @media screen and (max-width: 900px){
+        article:nth-child(2),
+        article:nth-child(3){
+            width: 100%;
+        }
+    }
+</style>
