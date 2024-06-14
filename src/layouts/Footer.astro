@@ -2,71 +2,81 @@
 import FooterBtn from "./FooterBtn.astro"
 ---
 
-<footer class="mt-[200px] border-t-[1px] border-white/30 py-[120px]">
+<footer class="relative block mt-[200px] border-t-[1px] border-white/30 py-[120px]">
+        <!-- BLUR -->
+        <div class="w-[300px] h-[300px] bg-blue-600 rounded-full absolute bottom-[-10%] left-[-35%] blur-[150px] opacity-100 max-xl:w-[100px] max-xl:h-[100px] max-xl:blur-[60px]"></div>
     <div class="flex gap-[20px] justify-between max-sm:flex-wrap">
-        <div class="w-[25%] max-sm:w-[40%]">
-            <p class="uppercase italic font-semibold block mb-[20px]">Kaoticode</p>
-            <p>Bienvenido a kaoticode, la empresa de soluciones tecnológica que demuestra con proyectos reales lo que es capaz de crear</p>
-    
+        <!-- BLUR -->
+        <div class="w-[300px] h-[300px] bg-blue-600 rounded-full absolute bottom-[10%] right-[-35%] blur-[150px] opacity-100 max-xl:w-[100px] max-xl:h-[100px] max-xl:blur-[60px]"></div>
+        <!-- BLUR -->
+        <div class="w-[300px] h-[300px] bg-purple-600 rounded-full absolute bottom-[15%] right-[2%] blur-[150px] opacity-100 max-xl:w-[300px] max-xl:h-[300px] max-xl:blur-[140px] max-xl:bottom-[70%]"></div>
+        <div class="flex flex-col">
+            <div class="relative z-10 flex gap-[20px] justify-between max-sm:flex-wrap">
+                <div class="w-[25%] max-sm:w-[40%]">
+                    <p class="uppercase italic font-semibold block mb-[20px]">Kaoticode</p>
+                    <p>Bienvenido a kaoticode, la empresa de soluciones tecnológica que demuestra con proyectos reales lo que es capaz de crear</p>
+            
+                </div>
+                <div class="w-[25%] max-sm:w-[40%]">
+                    <p class="uppercase italic font-semibold block mb-[20px]">Comunidad</p>
+                    <FooterBtn 
+                        href=""
+                        title="Komunly"
+                    />
+                    <FooterBtn 
+                        href=""
+                        title="Instagram"
+                    />
+                    <FooterBtn 
+                        href=""
+                        title="WhatsApp"
+                    />
+                    <FooterBtn 
+                        href=""
+                        title="Discord"
+                    />
+                </div>
+                <div class="w-[25%] max-sm:w-[40%]">
+                    <p class="uppercase italic font-semibold block mb-[20px]">enlaces útiles</p>
+                    <FooterBtn 
+                        href=""
+                        title="Proceso de dessrrollo"
+                    />
+                    <FooterBtn 
+                        href=""
+                        title="Comprar código"
+                    />
+                    <FooterBtn 
+                        href=""
+                        title="Torneo"
+                    />
+                    <FooterBtn 
+                        href=""
+                        title="Trabaja con nosotros"
+                    />
+                </div>
+                <div class="w-[25%] max-sm:w-[40%]">
+                    <p class="uppercase italic font-semibold block mb-[20px]">Proyectos</p>
+                    <FooterBtn 
+                        href=""
+                        title="Komunly"
+                    />
+                    <FooterBtn 
+                        href=""
+                        title="Katicum"
+                    />
+                    <FooterBtn 
+                        href=""
+                        title="Información"
+                    />
+                    <FooterBtn 
+                        href=""
+                        title="Klickum"
+                    />
+                </div>
+            </div>
+            <p class="block mt-[50px]">Todos los derechos reservados a Kaoticode 2024</p>
+
         </div>
-        <div class="w-[25%] max-sm:w-[40%]">
-            <p class="uppercase italic font-semibold block mb-[20px]">Comunidad</p>
-            <FooterBtn 
-                href=""
-                title="Komunly"
-            />
-            <FooterBtn 
-                href=""
-                title="Instagram"
-            />
-            <FooterBtn 
-                href=""
-                title="WhatsApp"
-            />
-            <FooterBtn 
-                href=""
-                title="Discord"
-            />
-        </div>
-        <div class="w-[25%] max-sm:w-[40%]">
-            <p class="uppercase italic font-semibold block mb-[20px]">enlaces útiles</p>
-            <FooterBtn 
-                href=""
-                title="Proceso de dessrrollo"
-            />
-            <FooterBtn 
-                href=""
-                title="Comprar código"
-            />
-            <FooterBtn 
-                href=""
-                title="Torneo"
-            />
-            <FooterBtn 
-                href=""
-                title="Trabaja con nosotros"
-            />
-        </div>
-        <div class="w-[25%] max-sm:w-[40%]">
-            <p class="uppercase italic font-semibold block mb-[20px]">Proyectos</p>
-            <FooterBtn 
-                href=""
-                title="Komunly"
-            />
-            <FooterBtn 
-                href=""
-                title="Katicum"
-            />
-            <FooterBtn 
-                href=""
-                title="Información"
-            />
-            <FooterBtn 
-                href=""
-                title="Klickum"
-            />
-        </div>
-    </div>
-    <p class="block mt-[50px]">Todos los derechos reservados a Kaoticode 2024</p>
 
 </footer>

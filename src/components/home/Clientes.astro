@@ -2,7 +2,12 @@
 import ClientesCard from "./ClientesCard.astro";
 ---
 
-<section class="mt-[220px] w-full flex flex-col gap-[10px] overflow-hidden max-sm:mt-[150px]">
+<section class="relative mt-[220px] w-full flex flex-col gap-[10px] overflow-hidden max-sm:mt-[150px]">
+     <!-- BLUR -->
+     <div class="w-[300px] h-[300px] bg-purple-600 rounded-full absolute top-[100px] left-[100px] blur-[150px] opacity-100 max-xl:w-[100px] max-xl:h-[100px] max-xl:blur-[60px]"></div>
+    <!-- BLUR -->
+     <div class="w-[400px] h-[400px] bg-purple-600 rounded-full absolute top-[-100px] right-[-100px] blur-[200px] opacity-100 max-xl:w-[60px] max-xl:h-[60px] max-xl:blur-[220px]"></div>
+     <!-- SLIDER -->
     <ul class="slider__users slider__1 flex gap-[10px] w-[450%]">
         <ClientesCard
             img="/avatar__1.png"
@@ -133,7 +138,7 @@ import ClientesCard from "./ClientesCard.astro";
         }
     }
     @media screen and (max-width: 900px){
-         ul:nth-child(1){
+         ul:nth-child(3){
             width: 100%;
             padding: 0px 20px;
             flex-direction: column;
