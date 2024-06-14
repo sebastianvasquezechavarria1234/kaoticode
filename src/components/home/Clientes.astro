@@ -1,0 +1,146 @@
+---
+import ClientesCard from "./ClientesCard.astro";
+---
+
+<section class="mt-[220px] w-full flex flex-col gap-[10px] overflow-hidden max-sm:mt-[150px]">
+    <ul class="slider__users slider__1 flex gap-[10px] w-[450%]">
+        <ClientesCard
+            img="/avatar__1.png"
+            usersName="Felipe betancur"
+            fecha="Hace 4 meses"
+            description="Encantado con la experiencia de Kaoticode,  en el mundo del desarrollo, Estoy muy contento con su servicio, es impecable, destacado por su rapidez y profesionalismo."
+         />
+        <ClientesCard
+            img="/avatar__2.png"
+            usersName="Felipe Betancur"
+            fecha="Hace 4 meses"
+            description="Me surgieron ciertos poblemas y asuntos, acidí a kaoticode y no puedo estar más satisfecho. No duraron en ayudarme y en cuestión de minutos se pusieron en contacto conmigo para empezar a solventar los problemas que tenia..."
+         />
+        <ClientesCard
+            img="/avatar__3.png"
+            usersName="Salome Urtado"
+            fecha="Hace 3 meses"
+            description="muy recomendable, el equipo me ayudó con un problema que tenía y todo perfecto. Sin duda repetiré."
+         />
+        <ClientesCard
+            img="/avatar__4.png"
+            usersName="Alvaro Marco Perea"
+            fecha="Hace 2 meses"
+            description="Es una consultoría de primer nivel que recomendaría a cualquier empresa buscando soluciones en el mundo del desarrollo web y de aplicaciones. Su enfoque centrado en el cliente y habilidades técnicas hacen de ellos una opción sobresaliente en el campo."
+         />
+        <ClientesCard
+            img="/avatar__5.webp"
+            usersName="Adbel Lamine"
+            fecha="Hace 4 meses"
+            description="Hace dos semanas adquirí los servicios de esta empresa y puedo decir que los resultados han sido excelentes. El trato personal es impecable y destacado la rapidez con la que gestionan cada caso. Recomendable si buscan conocimientos o iniciarte en el mundo web."
+         />
+        <ClientesCard
+            img="/avatar__6.webp"
+            usersName="Raul Pacheco"
+            fecha="Hace 1 meses"
+            description="Grandes profesionales que ofrecen un muy buen servio a sus clientes. Totalmente recomendable."
+         />
+        <ClientesCard
+            img="/avatar__7.webp"
+            usersName="luis Manuel"
+            fecha="Hace 1 meses"
+            description="Empresa seria muy conocida esencial para tu web, me ayudaron con unos problemas que tenía mi web,  buen trato al cliente."
+         />
+        <ClientesCard
+            img="/avatar__8.webp"
+            usersName="Salvador Lineares"
+            fecha="Hace 1 meses"
+            description="Absolutamente ancantado con la experiencia de Kaoticode. Su servicio es implacable, destacando por su rapidez y profesionalismo, ¡Una elección que supera todas las expectativas!."
+         />
+        <ClientesCard
+            img="/avatar__1.png"
+            usersName="Ron"
+            fecha="Hace 1 meses"
+            description="Fue de gran ayuda en algo que desconocía por antiguas practicas. Gracias y éxitos."
+         />
+    </ul>
+    <ul class="none slider__users flex gap-[10px] w-[450%]">
+        <ClientesCard
+            img="/avatar__1.png"
+            usersName="Felipe betancur"
+            fecha="Hace 4 meses"
+            description="Encantado con la experiencia de Kaoticode,  en el mundo del desarrollo, Estoy muy contento con su servicio, es impecable, destacado por su rapidez y profesionalismo."
+         />
+        <ClientesCard
+            img="/avatar__2.png"
+            usersName="Felipe Betancur"
+            fecha="Hace 4 meses"
+            description="Me surgieron ciertos poblemas y asuntos, acidí a kaoticode y no puedo estar más satisfecho. No duraron en ayudarme y en cuestión de minutos se pusieron en contacto conmigo para empezar a solventar los problemas que tenia..."
+         />
+        <ClientesCard
+            img="/avatar__3.png"
+            usersName="Salome Urtado"
+            fecha="Hace 3 meses"
+            description="muy recomendable, el equipo me ayudó con un problema que tenía y todo perfecto. Sin duda repetiré."
+         />
+        <ClientesCard
+            img="/avatar__4.png"
+            usersName="Alvaro Marco Perea"
+            fecha="Hace 2 meses"
+            description="Es una consultoría de primer nivel que recomendaría a cualquier empresa buscando soluciones en el mundo del desarrollo web y de aplicaciones. Su enfoque centrado en el cliente y habilidades técnicas hacen de ellos una opción sobresaliente en el campo."
+         />
+        <ClientesCard
+            img="/avatar__5.webp"
+            usersName="Adbel Lamine"
+            fecha="Hace 4 meses"
+            description="Hace dos semanas adquirí los servicios de esta empresa y puedo decir que los resultados han sido excelentes. El trato personal es impecable y destacado la rapidez con la que gestionan cada caso. Recomendable si buscan conocimientos o iniciarte en el mundo web."
+         />
+        <ClientesCard
+            img="/avatar__6.webp"
+            usersName="Raul Pacheco"
+            fecha="Hace 1 meses"
+            description="Grandes profesionales que ofrecen un muy buen servio a sus clientes. Totalmente recomendable."
+         />
+        <ClientesCard
+            img="/avatar__7.webp"
+            usersName="luis Manuel"
+            fecha="Hace 1 meses"
+            description="Empresa seria muy conocida esencial para tu web, me ayudaron con unos problemas que tenía mi web,  buen trato al cliente."
+         />
+        <ClientesCard
+            img="/avatar__8.webp"
+            usersName="Salvador Lineares"
+            fecha="Hace 1 meses"
+            description="Absolutamente ancantado con la experiencia de Kaoticode. Su servicio es implacable, destacando por su rapidez y profesionalismo, ¡Una elección que supera todas las expectativas!."
+         />
+        <ClientesCard
+            img="/avatar__1.png"
+            usersName="Ron"
+            fecha="Hace 1 meses"
+            description="Fue de gran ayuda en algo que desconocía por antiguas practicas. Gracias y éxitos."
+         />
+    </ul>
+</section>
+
+<style>
+    .slider__users{
+        animation: slider__users 30s infinite linear alternate;
+    }
+    .slider__users:nth-child(2){
+        animation: slider__users 30s infinite linear alternate-reverse;
+    }
+    .slider__users:hover{
+        animation-play-state: paused;
+    }
+    @keyframes slider__users {
+        100%{
+            transform: translateX(-2500px);
+        }
+    }
+    @media screen and (max-width: 900px){
+         ul:nth-child(1){
+            width: 100%;
+            padding: 0px 20px;
+            flex-direction: column;
+            animation: slider__users__none 0s infinite linear alternate;
+        }
+        .none{
+            display: none;
+        }
+    }
+</style>

@@ -1,0 +1,46 @@
+---
+import ServiciosCard from "./ServiciosCard.astro"
+---
+
+<!-- INDEX SERVICIOS -->
+
+<section class="relative z-10 mt-[320px] px-[40px] max-lg:px-[20px] max-sm:mt-[220px]">
+    <!-- IMG SERVICIOS -->
+    <img 
+        id="img__servicios"
+        class="w-full absolute top-[-100px] left-0 -z-10 opacity-80"
+        src="/servicios.avif" 
+        alt="servicios">
+    <!-- IMG SERVICIOS MOVIL -->
+    <img 
+        id="img__servicios--movil"
+        class="w-full absolute top-[0px] left-0 -z-10 opacity-80"
+        src="/servicios__movil.avif" 
+        alt="servicios">
+
+    <!-- TILE -->
+    <div class="z-10 mb-[80px] block">
+        <h1 class="">En nuestro estudio, <span class="font__secundary uppercase italic"> la creatividad son </span>las soluciones que superan las expectativas.</h1>
+    </div>
+    <div class="flex justify-between items-end flex-wrap">
+        <h4>Servicios</h4>
+        <p class="max-w-[400px] block">Tiene la opción de pedir cualquiera de los dos Un sitio web completo creación o servicios individuales según sea necesario.</p>
+    </div>    
+    <ServiciosCard
+        
+     />
+</section>
+
+<style>
+    #img__servicios--movil{
+        display: none;
+    }
+    @media screen and (max-width: 800px){
+        #img__servicios{
+            display: none;
+        }
+        #img__servicios--movil{
+            display: block;
+        }
+    }
+</style>

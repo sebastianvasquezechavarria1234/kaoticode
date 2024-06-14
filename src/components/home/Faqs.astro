@@ -1,0 +1,65 @@
+---
+import FaqsCard from "./FaqsCard.astro";
+---
+
+<!-- FASQ INDEX -->
+<section class="relative mt-[200px] max-sm:mt-[150px]">
+    <!-- BLUR -->
+    <div class="w-[300px] h-[300px] bg-blue-600 rounded-full absolute top-[-100px] right-[-100px] -z-10 blur-[120px] opacity-50"></div>
+    <!-- PICTURE -->
+     <img 
+        class="anm__2 absolute left-[-200px] bottom-[-60px] z-10"
+        src="/feliz.avif" 
+        alt="feliz">
+    <!-- ACORDION -->
+    <h3 class="block mb-[30px] italic">Fasq</h3>
+    <div class="flex flex-wrap gap-[10px]">    
+        <FaqsCard
+            title="¿Cuáles son los tipos de servicios tecnológicos que ofrece su empresa?"
+            description="Ofrecemos una amplia gama de servicios tecnológicos, que incluyen el desarrollo de software personalizado, consultoría tecnológica, mantenimiento de sistemas y desarrollo de aplicaciones web y móviles."
+         />
+        <FaqsCard
+            title="¿Que pasa si quiero realizar ca"
+            description="Si deseas realizar cambios en un proyecto ya desarrollado, nuestro equipo se encargará de mantenerte informado en todo momento sobre los ajustes que se realicen. Inicialmente, discutiremos y acordaremos un diseño y nuevas funcionalidades contigo, lo cual determinará el costo adicional del proyecto. Si en algún momento decides cambiar o agregar funcionalidades después de la implementación inicial, evaluaremos los requisitos y ajustaremos el precio del proyecto en consecuencia. Nuestra meta es asegurarnos de que estés completamente satisfecho con el resultado final y que cualquier modificación se realice de manera transparente y eficiente. ¡Estamos aquí para ayudarte a profesionalizar tu proyecto!"
+         />
+        <FaqsCard
+            title="¿Ofrecen servicios de consultoría para la mejora de sistemas existentes?"
+            description="Sí, proporcionamos servicios de consultoría tecnológica para evaluar y optimizar sistemas existentes, identificando áreas de mejora y proponiendo soluciones personalizadas."
+         />
+        <FaqsCard
+            title="¿Cuál es el proceso de desarrollo de una aplicación móvil desde cero?"
+            description="Nuestro proceso incluye la definición de requisitos, diseño, desarrollo, pruebas y despliegue. Trabajamos estrechamente contigo en cada etapa para garantizar que la aplicación cumpla con tus expectativas."
+            />
+            <FaqsCard
+                title="¿Cuáles son los beneficios del mantenimiento preventivo de sistemas?"
+                description="El mantenimiento preventivo ayuda a garantizar un rendimiento constante, minimizando el riesgo de interrupciones no planificadas y mejorando la seguridad y eficiencia de los sistemas."
+             />
+            <FaqsCard
+                title="¿Ofrecen servicios de integración de tecnologías de terceros?"
+                description="Sí, proporcionamos servicios de integración para garantizar una interoperabilidad efectiva entre diferentes tecnologías y sistemas."
+             />
+            <FaqsCard
+                title="¿Cómo puedo unirme al equipo de su empresa?"
+                description="¡Estamos siempre en busca de talento apasionado! Puedes consultar nuestras oportunidades laborales en nuestra sección trabaja con nosotros y enviarnos tu información a través del formulario de solicitud en línea."
+             />
+            <FaqsCard
+                title="¿Cómo garantizan la seguridad de las aplicaciones desarrolladas?"
+                description="Implementamos las mejores prácticas de seguridad en todas las etapas del desarrollo y realizamos pruebas exhaustivas para identificar y abordar posibles vulnerabilidades."
+             />
+    </div>
+</section>
+
+<style>
+    .anm__2{
+        animation: anm__2 8s infinite ;
+    }
+    @keyframes anm__2 {
+        0%,
+        100%{
+            transform: translateY(20px) rotate(15deg);
+        }
+        50%{
+            transform: translateY(-10px) rotate(15deg);;
+        } 
+    }
+</style>

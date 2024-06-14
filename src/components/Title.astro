@@ -1,0 +1,99 @@
+---
+const {title} = Astro.props;
+---
+
+<!-- TITLE SERVICIOS PROYECTOS AGENCIA -->
+<div class="relative w-full flex justify-center items-center overflow-hidden">
+    <!-- VIDEO -->
+    <video 
+        class="tranlate-y-[-200px] w-full top-0 left-0"
+        src="/video__title.mp4"
+        autoplay
+        loop
+        muted></video>
+        <!-- TITLE -->
+    <div class="title absolute bottom-[100px] z-10 slider__title flex items-center gap-[30px] text-nowrap font-bold max-sm:bottom-[0px]">
+        <h1 class="italic">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic font__secundary uppercase">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic font__secundary uppercase">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic font__secundary uppercase">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic font__secundary uppercase">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic font__secundary uppercase">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic font__secundary uppercase">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic font__secundary uppercase">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic font__secundary uppercase">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="italic font__secundary uppercase">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+        <h1 class="">{title}</h1>
+        <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
+
+    </div>
+</div>
+
+<style>
+    video,
+    h1,
+    .title{
+        mix-blend-mode: difference;
+    }
+    .title h1{
+        font-size: 15rem;
+        line-height: 200px;
+    }
+    .slider__title{
+        animation: title 40s infinite linear alternate;
+    }
+    @keyframes title {
+        100%{
+            transform: translateX(-3000px);
+        }
+    }
+    @media screen and (max-width: 600px){
+        .title h1{
+            font-size: 4rem;
+            line-height: 60px
+        }
+        
+    }
+</style>

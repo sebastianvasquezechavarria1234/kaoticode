@@ -1,0 +1,126 @@
+---
+---
+
+<hr class="bg-white/10 w-full h-[1px] block my-[50px] relative">
+<!-- CARD SERVICIOS INDEX -->
+<article class="relative flex justify-between w-full overflow-hidden p-[20px]">
+    <!-- SLIDER -->
+     <div class="slider left-[-274px] py-[20px] bg-white/10 absolute flex rotate-[-90deg] font-normal italic">
+        <p>Diseño Diseño Diseño Diseño Diseño Diseño Diseño Diseño Diseño Diseño</p>
+     </div>
+
+     <div class="w-[1%]"></div>
+
+
+     <!-- CENTER -->
+     <div class="center flex flex-col justify-between w-[400px]">
+        <p>Diseño</p>
+        <div class="flex flex-col">
+            <p class="max-w-[200px] mb-[20px]">Diseño que conecta tu marca con tu audiencia.</p>
+            <div class="flex gap-[10px]">
+                <p class="uppercase w-[70px] h-[70px] flex justify-center items-center rounded-full border-[1px] border-white/40">
+                    ux
+                </p>
+                <p class="uppercase w-[70px] h-[70px] flex justify-center items-center rounded-full border-[1px] border-white/40">
+                    ui
+                </p>
+            </div>
+        </div>
+     </div>
+
+     <!-- RIGTH -->
+      <div class="right flex flex-col w-[650px]">
+        <div class="flex items-end mb-[20px] gap-[5px]">
+            <p class="translate-y-[5px] max-sm:translate-y-[0px]">01</p>
+            <h2 class="font__primary"><span class="font__secundary uppercase italic">Branding</span></h2>
+        </div>
+        <div class="flex items-end mb-[20px] gap-[5px]">
+            <p class="translate-y-[5px] max-sm:translate-y-[0px]">02</p>
+            <h2 class="font__primary">Diseño web</h2>
+        </div>
+        <div class="flex items-end mb-[20px] gap-[5px]">
+            <p class="translate-y-[5px] max-sm:translate-y-[0px]">03</p>
+            <h2 class="font__primary">Diseño <span class="font__secundary uppercase italic">móvil</span></h2>
+        </div>
+      </div>
+</article>
+
+<hr class="bg-white/10 w-full h-[1px] block my-[50px] relative">
+
+<!-- CARD SERVICIOS INDEX -->
+<article class="relative flex justify-between w-full overflow-hidden p-[20px]">
+    <!-- SLIDER -->
+     <div class="slider left-[-415px] py-[20px] bg-white/10 absolute flex rotate-[-90deg] font-normal italic">
+        <p>Desarrollo Desarrollo Desarrollo Desarrollo Desarrollo Desarrollo Desarrollo Desarrollo Desarrollo Desarrollo</p>
+     </div>
+
+     <div class="w-[1%]"></div>
+
+
+     <!-- CENTER -->
+     <div class="center flex flex-col justify-between w-[400px]">
+        <p>Desarrollo</p>
+        <div class="flex flex-col">
+            <p class="max-w-[200px] mb-[20px]">Convertimos ideas en sitios web potentes y dinámicos.</p>
+            <div class="flex gap-[10px]">
+                <p class="uppercase w-[70px] h-[70px] flex justify-center items-center rounded-full border-[1px] border-white/40">
+                    HTML
+                </p>
+                <p class="uppercase w-[70px] h-[70px] flex justify-center items-center rounded-full border-[1px] border-white/40">
+                    CSS
+                </p>
+                <p class="uppercase w-[70px] h-[70px] flex justify-center items-center rounded-full border-[1px] border-white/40">
+                    JS
+                </p>
+                <p class="uppercase w-[70px] h-[70px] flex justify-center items-center rounded-full border-[1px] border-white/40">
+                    PHP 
+                </p>
+            </div>
+        </div>
+     </div>
+
+     <!-- RIGTH -->
+      <div class="right flex flex-col w-[650px]">
+        <div class="flex items-end mb-[20px] gap-[5px]">
+            <p class="translate-y-[5px] max-sm:translate-y-[0px]">01</p>
+            <h2 class="font__primary">Animaciones</h2>
+        </div>
+        <div class="flex items-end mb-[20px] gap-[5px]">
+            <p class="translate-y-[5px] max-sm:translate-y-[0px]">02</p>
+            <h2 class="font__primary">Fron-end</h2>
+        </div>
+        <div class="flex items-end mb-[20px] gap-[5px]">
+            <p class="translate-y-[5px] max-sm:translate-y-[0px]">03</p>
+            <h2 class="font__primary"><span class="font__secundary uppercase italic">Back-end</span></h2>
+        </div>
+      </div>
+</article>
+
+<hr class="bg-white/10 w-full h-[1px] block my-[50px] relative">
+
+<style>
+    .slider{
+        animation: slider 20s infinite linear alternate;
+    }
+    @keyframes slider {
+        100%{
+            transform: rotate(-90deg) translateX(-40%)
+        }
+        
+    }
+    @media screen and (max-width: 1200px){
+        article{
+            flex-direction: column;
+            gap: 40px;
+            padding-left: 0px;
+        }
+        .center,
+        .right{
+            width: 100%;
+        }
+        .slider{
+            display: none;
+        }
+        
+    }
+</style>

@@ -1,0 +1,34 @@
+---
+const { title, href } = Astro.props;
+---
+
+<a 
+   class="relative  inline-flex flex-col overflow-hidden px-[20px] opacity-100 uppercase max-sm:text-[12px] max-sm:px-[8px] italic"
+    href={href}>
+    <span
+        class="flex items-center gap-[5px]">
+        <div class="w-[10px] h-[10px] block relative bg-white rounded-full max-sm:w-[5px] max-sm:h-[5px]"></div>
+        {title}
+    </span>
+    <span
+        class="flex items-center gap-[5px] absolute top-[100%]">
+        <div class="w-[10px] h-[10px] block relative bg-white rounded-full max-sm:w-[5px] max-sm:h-[5px]"></div>
+        {title}
+    </span>
+</a>
+
+<style>
+    a{
+        mix-blend-mode: difference;
+    }
+    span{
+        transition: all .2s;
+    }
+    a:hover span:nth-child(1){
+        transform: translateY(-100%)
+    }
+    a:hover span:nth-child(2){
+        top: 0;
+    }
+   
+</style>

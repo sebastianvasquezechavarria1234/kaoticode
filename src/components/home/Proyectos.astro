@@ -1,0 +1,116 @@
+---
+import ProyectosCard from "./ProyectosCard.astro";
+---
+
+<!-- INDEX PROYECTOS -->
+<section class="relative z-30 mt-[220px] px-[40px] max-lg:px-[20px] flex">
+    <!-- LEFT -->
+    <div class="left relative block w-[30%]">
+        <h4 class="sticky top-[120px] block">Proyectos</h4>
+        <img 
+            class="anm absolute left-[75%] top-[10%]"
+            src="/estrella.avif" 
+            alt="estrella">
+        <img 
+            class="anm__2 absolute left-[-10%] top-[50%] w-[300px]"
+            src="/feliz.avif" 
+            alt="estrella">
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right relative flex flex-col w-[70%] justify-end">
+        <!-- CARD PROYECTOS -->
+        <ProyectosCard
+            href=""
+            title="Primer proyecto"
+            number="#001"
+            fecha="/12/06/2023"
+            img="/proyecto__1.avif" 
+            
+        />
+        <!-- LINE -->
+        <hr class="bg-white/10 w-full h-[1px] block my-[50px] relative">
+
+        <!-- CARD PROYECTOS -->
+        <ProyectosCard
+            href=""
+            title="segundo proyecto"
+            number="#002"
+            fecha="/01/02/2024"
+            img="/proyecto__2.avif" 
+            
+        />
+        <!-- LINE -->
+        <hr class="bg-white/10 w-full h-[1px] block my-[50px] relative">
+
+        <!-- CARD PROYECTOS -->
+        <ProyectosCard
+            href=""
+            title="tercer proyecto"
+            number="#002"
+            fecha="/03/03/2024"
+            img="/proyecto__3.avif" 
+            
+        />
+        <!-- LINE -->
+        <hr class="bg-white/10 w-full h-[1px] block my-[50px] relative">
+
+        <!-- CARD PROYECTOS -->
+        <ProyectosCard
+            href=""
+            title="cuarto proyecto"
+            number="#002"
+            fecha="/04/03/2024"
+            img="/proyecto__4.avif" 
+        />
+
+        <!-- LINE -->
+        <hr class="bg-white/10 w-full h-[1px] block my-[50px] relative">
+
+        <!-- CORAZON -->
+        <img 
+        class="anm absolute right-[-10%] bottom-[-5%] w-[300px]"
+        src="/corazon.avif" 
+        alt="estrella">
+    </div>
+</section>
+
+<style>
+    .anm{
+        animation: anm 8s infinite ;
+    }
+    .anm__2{
+        animation: anm__2 8s infinite ;
+    }
+    @keyframes anm {
+        0%,
+        100%{
+            transform: translateY(-10px);
+        }
+        50%{
+            transform: translateY(20px);
+        } 
+    }
+    @keyframes anm__2 {
+        0%,
+        100%{
+            transform: translateY(20px) rotate(15deg);
+        }
+        50%{
+            transform: translateY(-10px) rotate(15deg);;
+        } 
+    }
+    @media screen and (max-width: 1200px){
+        .left{
+            display: none;
+        }
+        .right{
+            width: 100%;
+        }
+        /* hr{
+            display: none;
+        } */
+    }
+    
+
+</style>

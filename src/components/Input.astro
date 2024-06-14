@@ -1,0 +1,16 @@
+---
+const { title, type } = Astro.props;
+---
+
+<!-- INPUT FORM -->
+<label class="w-full block mb-[20px]">
+    <p class="block mb-[5px]">{title}</p>
+    <input 
+        class="font__secundary p-[13px] bg-white/0 border-[1px] border-white/30 rounded-[6px] w-full placeholder:text-white/50 outline-none text-[17px]"
+        type={type}
+        required
+        minlength="3"
+        maxlength="70"
+    >
+
+</label>

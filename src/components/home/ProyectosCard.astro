@@ -1,0 +1,39 @@
+---
+const { href, title, number, fecha, img } = Astro.props;
+---
+
+<!-- CARD PROYECTOS INDEX -->
+<a 
+    class="relative flex justify-between h-[300px] w-full max-lg:flex-col"
+    href=""
+    target="_blank">
+    <!-- TITLE -->
+    <div class="tt flex flex-col justify-between">
+        <h3>
+            {title}
+        </h3>
+        <div class="flex flex-col">
+            <p>{number}</p>
+            <p>{fecha}</p>
+        </div>
+    </div>
+    
+    <!-- PICTURE -->
+    <img 
+        class="h-full block max-lg:w-full"
+        src={img} 
+        alt="Proyecto">
+</a>
+
+<style>
+    @media screen and (max-width: 1200px){
+        a{
+            justify-items: start;
+            height: 70vw;
+        }
+        .tt{
+            margin-bottom: 30px;
+        }
+    }
+
+</style>

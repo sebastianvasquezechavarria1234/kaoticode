@@ -1,0 +1,43 @@
+---
+const { title, href } = Astro.props;
+---
+
+<!-- TAB DEFAULT -->
+<a 
+    class="relative py-[13px] px-[20px] rounded-full border-[1px] border-white/40 inline-flex items-center justify-center italic overflow-hidden duration-300 z-10"
+    href={href}>
+    <!-- BLUR TAB -->
+    <div class="w-[50%] h-[10%] block absolute bg-white blur-[30px] rounded-full -z-10"></div>
+
+    <!-- EFECT TRANSLATE Y -->
+    <div class="relative  inline-flex flex-col overflow-hidden">
+        <span
+            class="flex items-center gap-[5px]">
+            <div class="w-[10px] h-[10px] rounded- block relative bg-white rounded-full max-sm:w-[5px] max-sm:h-[5px]"></div>
+            {title}
+        </span>
+        <span
+            class="flex items-center gap-[5px] absolute top-[100%]">
+            <div class="w-[10px] h-[10px] block relative bg-white rounded-full max-sm:w-[5px] max-sm:h-[5px]"></div>
+            {title}
+        </span>
+
+    </div>
+</a>
+
+
+<style>
+    a{
+        mix-blend-mode: difference;
+    }
+    span{
+        transition: all .2s;
+    }
+    a:hover span:nth-child(1){
+        transform: translateY(-100%)
+    }
+    a:hover span:nth-child(2){
+        top: 0;
+    }
+   
+</style>
