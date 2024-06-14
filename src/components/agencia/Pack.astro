@@ -1,119 +1,122 @@
 ---
 import PackCard from "./PackCard.astro";
+import MaxWidth from "../../layouts/MaxWidth.astro";
 ---
 
 <!-- PACK -->
-<section class="relative mt-[120px] px-[40px] max-lg:px-[20px]">
+<section class="relative mt-[120px]">
      <!-- BLUR -->
      <div class="w-[300px] h-[300px] bg-purple-600 rounded-full absolute top-[100px] left-[100px] blur-[150px] opacity-100 max-xl:w-[100px] max-xl:h-[100px] max-xl:blur-[60px]"></div>
      <!-- BLUR -->
      <div class="w-[300px] h-[300px] bg-blue-600 rounded-full absolute bottom-[00px] right-[100px] blur-[150px] opacity-100 max-xl:w-[100px] max-xl:h-[100px] max-xl:blur-[60px]"></div>
 
-    <!-- TITLE -->
-     <h3 class="italic mb-[30px]">pack</h3>
-
-    <!-- FLEX -->
-     <div class="ctn__flex flex gap-[20px]">
-        <PackCard>
-            <h4 class="flex justify-between mb-[30px]">Estándar 
-                <img class="w-[60px]" src="/estrella.avif" alt="estrella">
-            </h4>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-t-[1px] border-white/30">
-                Instagram
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Facebook
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                X
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Youtube
-                <svg  class="text-red-600"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Campaña de marketing
-                <svg  class="text-red-600"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Anuncios de pago en redes
-                <svg  class="text-red-600"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Desarrollo de la página web
-                <svg  class="text-red-600"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-            </p>
-        </PackCard>
-        <PackCard>
-            <h4 class="flex justify-between mb-[30px]">Premium
-                <img class="w-[60px]" src="/diamante.avif" alt="diamante">
-            </h4>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-t-[1px] border-white/30">
-                Instagram
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Facebook
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                X
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Youtube
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Campaña de marketing
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Anuncios de pago en redes
-                <svg  class="text-red-600"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Desarrollo de la página web
-                <svg  class="text-red-600"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-            </p>
-        </PackCard>
-        <PackCard>
-            <h4 class="flex justify-between mb-[30px]">Deluxe
-                <img class="w-[60px]" src="/corazon.avif" alt="corazon">
-            </h4>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-t-[1px] border-white/30">
-                Instagram
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Facebook
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                X
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Youtube
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Campaña de marketing
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Anuncios de pago en redes
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-            <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
-                Desarrollo de la página web
-                <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-            </p>
-        </PackCard>
-     </div>
+    <MaxWidth>
+        <!-- TITLE -->
+         <h3 class="relative z-10 italic mb-[30px]">pack</h3>
+    
+        <!-- FLEX -->
+         <div class="relative z-10 ctn__flex flex gap-[20px]">
+            <PackCard>
+                <h4 class="flex justify-between mb-[30px]">Estándar 
+                    <img class="w-[60px]" src="/estrella.avif" alt="estrella">
+                </h4>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-t-[1px] border-white/30">
+                    Instagram
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Facebook
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    X
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Youtube
+                    <svg  class="text-red-600"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Campaña de marketing
+                    <svg  class="text-red-600"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Anuncios de pago en redes
+                    <svg  class="text-red-600"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Desarrollo de la página web
+                    <svg  class="text-red-600"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                </p>
+            </PackCard>
+            <PackCard>
+                <h4 class="flex justify-between mb-[30px]">Premium
+                    <img class="w-[60px]" src="/diamante.avif" alt="diamante">
+                </h4>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-t-[1px] border-white/30">
+                    Instagram
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Facebook
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    X
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Youtube
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Campaña de marketing
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Anuncios de pago en redes
+                    <svg  class="text-red-600"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Desarrollo de la página web
+                    <svg  class="text-red-600"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                </p>
+            </PackCard>
+            <PackCard>
+                <h4 class="flex justify-between mb-[30px]">Deluxe
+                    <img class="w-[60px]" src="/corazon.avif" alt="corazon">
+                </h4>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-t-[1px] border-white/30">
+                    Instagram
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Facebook
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    X
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Youtube
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Campaña de marketing
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Anuncios de pago en redes
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+                <p class="flex justify-between py-[10px] border-b-[1px] border-white/30">
+                    Desarrollo de la página web
+                    <svg class="text-green-500"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                </p>
+            </PackCard>
+         </div>
+    </MaxWidth> 
 </section>
 
 

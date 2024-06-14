@@ -1,18 +1,18 @@
 ---
-const { title, title2, titleSpan1, titleSpan2, style, icon1, icon2, description1, description2, description3 } = Astro.props;
+const { title, title2, titleSpan1, titleSpan2, style, icon1, description1, description2, description3 } = Astro.props;
 ---
 
 <!-- CARD FLEX -->
-<article class=`${style} bg-cover bg-center p-[24px] rounded-[20px]`>
-    <div class="width flex gap-[30px]">
+<article class=`${style} relative z-10 bg-cover bg-center p-[24px] rounded-[20px]`>
+    <div class="width flex flex-col gap-[30px] justify-between">
         <!-- PICTURE -->
         <img 
-            class="w-[200px]"
+            class="w-[200px] h-[200px]"
             src={icon1} 
             alt="picture">
     
         <!-- TITLE -->
-         <div class="title flex flex-col w-[60%]">
+         <div class="title flex flex-col w-full">
             <h4 class="mb-[30px]">
                 {title} <span class="italic">{titleSpan1}</span> {title2} <span class="uppercase font__secundary">{titleSpan2}</span>
             </h4>
@@ -20,12 +20,6 @@ const { title, title2, titleSpan1, titleSpan2, style, icon1, icon2, description1
             <p>{description2}</p>
             <p>{description3}</p>
          </div>
-
-         <!-- PICTURE -->
-        <img 
-            class="w-[200px]"
-            src={icon2} 
-            alt="picture">
 
     </div>
 </article>
@@ -41,10 +35,6 @@ const { title, title2, titleSpan1, titleSpan2, style, icon1, icon2, description1
     article:nth-child(2),
     article:nth-child(3){
         width: calc(50% - 10px);
-    }
-    article:nth-child(2) div img:nth-child(3),
-    article:nth-child(3) div img:nth-child(3){
-        display: none;
     }
     @media screen and (max-width: 1400px){
         article:nth-child(2) div,
