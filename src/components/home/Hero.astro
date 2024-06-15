@@ -1,42 +1,36 @@
 ---
 import Btn from "../Btn.astro"
 import MaxWidth from "../../layouts/MaxWidth.astro"
+import Title from "../Title.astro"
 ---
 
 <!-- HERO INDEX -->
-<section class="relative z-20 w-full h-screen max-sm:h-[120vw]">
+<section class="relative z-20 w-full  max-sm:h-[120vw]">
     <!-- BLUR -->
      <div class="w-[300px] h-[300px] bg-purple-600 rounded-full absolute top-[100px] left-[100px] blur-[150px] opacity-100 max-xl:w-[100px] max-xl:h-[100px] max-xl:blur-[60px]"></div>
     <!-- BLUR -->
-     <div class="w-[400px] h-[400px] bg-blue-600 rounded-full absolute bottom-[100px] right-[100px] blur-[200px] opacity-100 max-xl:w-[100px] max-xl:h-[100px] max-xl:blur-[60px]"></div>
+     <div class="w-[400px] h-[400px] bg-blue-600 rounded-full absolute bottom-[200px] right-[100px] blur-[200px] opacity-100 max-xl:w-[100px] max-xl:h-[100px] max-xl:blur-[60px]"></div>
     <!-- BLUR -->
      <div class="w-[400px] h-[400px] bg-purple-600 rounded-full absolute top-[-100px] right-[-100px] blur-[200px] opacity-100 max-xl:w-[60px] max-xl:h-[60px] max-xl:blur-[220px]"></div>
-    <!-- VIDEO -->
-    <video 
-        class="w-full h-full"
-        src="/video.mp4"
-        autoplay
-        loop
-        muted></video>
-        <div class="absolute bottom-[-20%] w-full">
-            <img 
-                class="w-[90%] mx-auto"
-                src="/hero__title.png" 
-                alt="">
-            <!-- TITLE, DESCRIPTION -->
-            <div class="flex flex-col items-end px-[20px] w-[90%]">
-                <div class="">
-                    <p class="max-w-[700px] block mb-[30px]">
-                        ¡Bienvenido a Kaoticode! Somos expertos en desarrollo digital, especializados en crear aplicaciones y páginas web que destacan. Con tecnología de vanguardia y un enfoque ágil, transformamos tus ideas en experiencias digitales excepcionales. ¡Haz que tu visión cobre vida con nosotros!
-                    </p>
-                    <Btn 
-                        title="Comprar codigos"
-                        href=""
-                    />
-                </div>
-                
+    <Title 
+        title="kaoticode"
+    />
+    <div class=" w-full">
+        <!-- TITLE, DESCRIPTION -->
+        <div class="flex flex-col w-full  justify-center">
+            
+            <div class="flex items-center flex-col">
+                <p class="max-w-[700px] mx-auto text-center block mb-[30px] mt-[30px]">
+                    ¡Bienvenido a Kaoticode! Somos expertos en desarrollo digital, especializados en crear aplicaciones y páginas web que destacan. Con tecnología de vanguardia y un enfoque ágil, transformamos tus ideas en experiencias digitales excepcionales. ¡Haz que tu visión cobre vida con nosotros!
+                </p>
+                <Btn 
+                    title="Comprar codigos"
+                    href=""
+                />
             </div>
+            
         </div>
+    </div>
 </section>
 
 <style>

@@ -4,21 +4,8 @@ const {title} = Astro.props;
 
 <!-- TITLE SERVICIOS PROYECTOS AGENCIA -->
 <div class="relative w-full flex justify-center items-center overflow-hidden">
-      <!-- BLUR -->
-      <div class="w-[300px] h-[300px] bg-purple-600 rounded-full absolute top-[100px] left-[100px] blur-[150px] opacity-100 max-xl:w-[100px] max-xl:h-[100px] max-xl:blur-[60px]"></div>
-      <!-- BLUR -->
-       <div class="w-[400px] h-[400px] bg-blue-600 rounded-full absolute bottom-[350px] right-[100px] blur-[200px] opacity-100 max-xl:w-[100px] max-xl:h-[100px] max-xl:blur-[60px]"></div>
-      <!-- BLUR -->
-       <div class="w-[400px] h-[400px] bg-purple-600 rounded-full absolute top-[-100px] right-[-100px] blur-[200px] opacity-100 max-xl:w-[60px] max-xl:h-[60px] max-xl:blur-[220px]"></div>
-    <!-- VIDEO -->
-    <video 
-        class="tranlate-y-[-200px] w-full top-0 left-0"
-        src="/video__title.mp4"
-        autoplay
-        loop
-        muted></video>
         <!-- TITLE -->
-    <div class="title absolute bottom-[100px] z-10 slider__title flex items-center gap-[30px] text-nowrap font-bold max-sm:bottom-[0px]">
+    <div class="title pt-[220px] z-10 slider__title flex items-center gap-[30px] text-nowrap font-bold max-sm:bottom-[0px]">
         <h1 class="italic">{title}</h1>
         <span class="block w-[10px] h-[10px] rounded-full bg-white"></span>
         <h1 class="italic font__secundary uppercase">{title}</h1>
@@ -78,7 +65,6 @@ const {title} = Astro.props;
 </div>
 
 <style>
-    video,
     h1,
     .title{
         mix-blend-mode: difference;
