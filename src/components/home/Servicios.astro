@@ -6,18 +6,14 @@ import MaxWidth from "../../layouts/MaxWidth.astro"
 <!-- INDEX SERVICIOS -->
 
 <section class="relative z-10 mt-[320px] max-sm:mt-[220px]">
-    <!-- IMG SERVICIOS -->
-    <img 
-        id="img__servicios"
-        class="w-full absolute top-[-100px] left-0 -z-10 opacity-80"
-        src="/servicios.avif" 
-        alt="servicios">
-    <!-- IMG SERVICIOS MOVIL -->
-    <img 
-        id="img__servicios--movil"
-        class="w-full absolute top-[0px] left-0 -z-10 opacity-80"
-        src="/servicios__movil.avif" 
-        alt="servicios">
+    <!-- BLUR -->
+    <div class="w-[300px] h-[300px] bg-purple-600 rounded-full absolute top-[100px] left-[100px] blur-[150px] opacity-100 max-xl:w-[100px] max-xl:h-[100px] max-xl:blur-[60px]"></div>
+    <!-- BLUR -->
+     <div class="w-[400px] h-[400px] bg-blue-600 rounded-full absolute bottom-[200px] right-[100px] blur-[200px] opacity-100 max-xl:w-[100px] max-xl:h-[100px] max-xl:blur-[60px]"></div>
+    <!-- BLUR -->
+     <div class="w-[400px] h-[400px] bg-purple-600 rounded-full absolute top-[-100px] right-[-100px] blur-[200px] opacity-100 max-xl:w-[60px] max-xl:h-[60px] max-xl:blur-[220px]"></div>
+    <!-- BLUR -->
+     <div class="w-[400px] h-[400px] bg-purple-600 rounded-full absolute bottom-[-100px] left-[20%] blur-[200px] opacity-100 max-xl:w-[60px] max-xl:h-[60px] max-xl:blur-[220px]"></div>
 
      <MaxWidth>
          <!-- TILE -->
@@ -34,16 +30,3 @@ import MaxWidth from "../../layouts/MaxWidth.astro"
     </MaxWidth>   
 </section>
 
-<style>
-    #img__servicios--movil{
-        display: none;
-    }
-    @media screen and (max-width: 800px){
-        #img__servicios{
-            display: none;
-        }
-        #img__servicios--movil{
-            display: block;
-        }
-    }
-</style>
