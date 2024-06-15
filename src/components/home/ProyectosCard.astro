@@ -7,8 +7,10 @@ const { href, title, number, fecha, img } = Astro.props;
     class="relative flex justify-between h-[300px] w-full max-lg:flex-col"
     href=""
     target="_blank">
+    <!-- BLUR -->
+    <div class="-z-10 card__blur w-[300px] h-[300px] bg-purple-600 rounded-full absolute top-[00px] left-[100px] blur-[150px] opacity-100 max-xl:w-[200px] max-xl:h-[200px] max-xl:blur-[150px]"></div>
     <!-- TITLE -->
-    <div class="tt flex flex-col justify-between">
+    <div class="tt relative z-10 flex flex-col justify-between">
         <h3>
             {title}
         </h3>
@@ -26,13 +28,28 @@ const { href, title, number, fecha, img } = Astro.props;
 </a>
 
 <style>
+    .card__blur{
+        display: none;
+    }
     @media screen and (max-width: 1200px){
+        .card__blur{
+            display: block;
+        }
         a{
             justify-items: start;
             height: 70vw;
         }
         .tt{
             margin-bottom: 30px;
+        }
+    }
+    @media screen and (max-width: 900px){
+        .tt{
+            position: absolute;
+            background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.731), rgba(0, 0, 0, 0));
+            padding: 24px;
+            width: 100%;
+            bottom: -30px;
         }
     }
 
