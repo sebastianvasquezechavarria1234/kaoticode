@@ -9,23 +9,24 @@ import Contacto from "../components/Contacto.astro";
 import Footer from "../layouts/Footer.astro";
 import BtnContacto from "../components/BtnContacto.astro";
 ---
-
-<Layout title="Kaoticode | Servicios">
-    <Header />
-     <!-- TITLE -->
-     <div class="mb-[50px]">
-        <Title 
-           title="servicios"
-        />
-    </div>
-
-    <BtnContacto />
-
-    <Grid />
-
-    <MaxWidth>
-        <Faqs />
-        <Contacto />
-        <Footer />
-    </MaxWidth>
-</Layout>
+<section class="overflow-hidden">
+    <Layout title="Kaoticode | Servicios">
+        <Header />
+         <!-- TITLE -->
+         <div class="mb-[50px]">
+            <Title 
+               title="servicios"
+            />
+        </div>
+    
+        <BtnContacto />
+    
+        <Grid />
+    
+        <MaxWidth>
+            <Faqs />
+            <Contacto />
+            <Footer />
+        </MaxWidth>
+    </Layout>
+</section>

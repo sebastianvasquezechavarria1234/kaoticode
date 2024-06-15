@@ -12,24 +12,27 @@ import Contacto from "../components/Contacto.astro";
 import Footer from "../layouts/Footer.astro";
 ---
 
-<Layout title="Kaoticode | Agencia">
-    <Header />
+<section class="overflow-hidden">
+    <Layout title="Kaoticode | Agencia">
+        <Header />
+    
+        <Title 
+            title="agencia"
+        />
+    
+        <Slider />
+    
+        <BtnContacto />
+    
+        <Pack />
+    
+        <Flex />
+    
+        <MaxWidth>
+            <Faqs />
+            <Contacto />
+            <Footer />
+        </MaxWidth>
+    </Layout>
 
-    <Title 
-        title="agencia"
-    />
-
-    <Slider />
-
-    <BtnContacto />
-
-    <Pack />
-
-    <Flex />
-
-    <MaxWidth>
-        <Faqs />
-        <Contacto />
-        <Footer />
-    </MaxWidth>
-</Layout>
+</section>
